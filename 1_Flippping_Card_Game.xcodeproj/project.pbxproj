@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8949F1962667916F00173670 /* FlippingCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8949F1952667916F00173670 /* FlippingCardModel.swift */; };
+		8949F198266792CB00173670 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8949F197266792CB00173670 /* Card.swift */; };
 		89D3428326674F47001DD2AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D3428226674F47001DD2AB /* AppDelegate.swift */; };
 		89D3428526674F47001DD2AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D3428426674F47001DD2AB /* SceneDelegate.swift */; };
 		89D3428726674F47001DD2AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D3428626674F47001DD2AB /* ViewController.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8949F1952667916F00173670 /* FlippingCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlippingCardModel.swift; sourceTree = "<group>"; };
+		8949F197266792CB00173670 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		89D3427F26674F47001DD2AB /* 1_Flippping_Card_Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 1_Flippping_Card_Game.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89D3428226674F47001DD2AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89D3428426674F47001DD2AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +103,8 @@
 		89D3428126674F47001DD2AB /* 1_Flippping_Card_Game */ = {
 			isa = PBXGroup;
 			children = (
+				8949F1952667916F00173670 /* FlippingCardModel.swift */,
+				8949F197266792CB00173670 /* Card.swift */,
 				89D3428626674F47001DD2AB /* ViewController.swift */,
 				89D3428826674F47001DD2AB /* Main.storyboard */,
 				89D342B226674FDD001DD2AB /* Supporting Files */,
@@ -268,6 +274,8 @@
 			files = (
 				89D3428726674F47001DD2AB /* ViewController.swift in Sources */,
 				89D3428326674F47001DD2AB /* AppDelegate.swift in Sources */,
+				8949F198266792CB00173670 /* Card.swift in Sources */,
+				8949F1962667916F00173670 /* FlippingCardModel.swift in Sources */,
 				89D3428526674F47001DD2AB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
