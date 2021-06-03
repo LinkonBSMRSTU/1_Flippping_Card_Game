@@ -43,7 +43,7 @@ class FlippingCard {
             let card = Card()
             cards += [card, card]
         }
+        cards.shuffle()
     }
-
-    // TODO: Shuffle the cards.
+ 
 }
