@@ -44,6 +44,7 @@ class FlippingCard {
             cards += [card, card]
         }
         cards.shuffle()
+        
     }
  
 }
