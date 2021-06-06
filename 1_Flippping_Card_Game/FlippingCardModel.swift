@@ -32,7 +32,7 @@ class FlippingCard {
     }
 
     func chooseCard(at index: Int) {
-
+        assert(cards.indices.contains(index), "FlippingCard.chooseCard(at: \(index): chosen index not in the cards")
         if !cards[index].isMatched {
 
             if let matchIndex = indexOfOneAndObnlyFaceUpCard, matchIndex != index {
@@ -52,6 +52,7 @@ class FlippingCard {
     }
 
     init(numberOfPairs: Int) {
+        assert(numberOfPairs > 0, "FlippingCard.chooseCard(at: \(numberOfPairs): you must have at least one pair of cards.")
         for _ in 1...numberOfPairs {
             let card = Card()
             cards += [card, card]
