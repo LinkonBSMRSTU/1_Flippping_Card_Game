@@ -13,11 +13,17 @@ class ViewController: UIViewController {
     @IBOutlet var cardButtons: [UIButton]!
 
     lazy var game = FlippingCard(numberOfPairs: (self.cardButtons.count + 1) / 2)
+    
+    var emoji = [Int: String]()
 
     var flipCount = 0 {
         didSet {
             flipCountLabel.text = "Flips: \(flipCount)"
         }
+    }
+    
+    var numberOfPairsOfCards: Int {
+        return (cardButtons.count + 1) / 2
     }
 
     var emojiChoices = ["👻", "🎃", "🦷", "👀", "🍄", "🍎", "💝", "🐶", "🎩", "🏀", "🍿", "🚙"]
@@ -53,7 +59,6 @@ class ViewController: UIViewController {
 
     }
 
-    var emoji = [Int: String]()
 
     func emoji(for card: Card) -> String {
 
