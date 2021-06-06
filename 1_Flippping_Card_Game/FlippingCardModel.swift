@@ -9,9 +9,9 @@ import Foundation
 
 class FlippingCard {
 
-    var cards = [Card]()
+    private(set) var cards = [Card]()
 
-    var indexOfOneAndObnlyFaceUpCard: Int? {
+    private var indexOfOneAndObnlyFaceUpCard: Int? {
         get {
             var foundIndex: Int?
             for index in cards.indices {
