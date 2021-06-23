@@ -7,7 +7,7 @@
 
 import Foundation
 
-class FlippingCard {
+struct FlippingCard {
 
     private(set) var cards = [Card]()
 
@@ -31,7 +31,7 @@ class FlippingCard {
         }
     }
 
-    func chooseCard(at index: Int) {
+    mutating func chooseCard(at index: Int) {
         assert(cards.indices.contains(index), "FlippingCard.chooseCard(at: \(index): chosen index not in the cards")
         if !cards[index].isMatched {
 
