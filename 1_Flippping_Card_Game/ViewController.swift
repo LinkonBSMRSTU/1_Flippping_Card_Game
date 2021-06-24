@@ -9,7 +9,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet private weak var flipCountLabel: UILabel!
+    @IBOutlet private weak var flipCountLabel: UILabel! {
+        didSet {
+            updateFlipCountLabel()
+        }
+    }
     @IBOutlet private var cardButtons: [UIButton]!
 
     private lazy var game = FlippingCard(numberOfPairs: (self.cardButtons.count + 1) / 2)
@@ -18,8 +22,17 @@ class ViewController: UIViewController {
 
     private(set) var flipCount = 0 {
         didSet {
-            flipCountLabel.text = "Flips: \(flipCount)"
+            updateFlipCountLabel()
         }
+    }
+    
+    private func updateFlipCountLabel() {
+        let attributes: [NSAttributedString.Key: Any] = [
+            .strokeWidth : 5.0,
+            .strokeColor : UIColor.orange
+        ]
+        let attributesString = NSAttributedString(string: "Flips: \(flipCount)", attributes: attributes)
+        flipCountLabel.attributedText = attributesString
     }
     
     var numberOfPairsOfCards: Int {
